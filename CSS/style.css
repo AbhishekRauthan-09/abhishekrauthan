@@ -157,7 +157,7 @@ body{
 
 @media screen and (max-width: 973px) {
 .homePage{
-   background: linear-gradient(#080d14cc, #03061dd3) ,url('./Imgs/pic1.jpg');
+   background: linear-gradient(#080d14cc, #03061dd3) ,url('../Imgs/pic1.jpg');
    background-position: center;
    background-size: cover;
 }
