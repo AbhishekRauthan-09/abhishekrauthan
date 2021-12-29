@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.mySkillsPage {
+  height: 100vh;
+  width: 100%;
+  background-color: #010317;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainHeading p {
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+  padding: 7px 0;
+}
+
+.mainHeading p span {
+  position: absolute;
+  height: 3px;
+  width: 57%;
+  bottom: 0;
+  left: 0;
+  background-color: #03b9ff;
+  border-radius: 0px 14px 14px 0px;
+}
+
+.mySkillsPage .skillSet {
+  height: 60%;
+  width: 45%;
+}
+
+.mySkillsPage .skillSet .skill {
+  height: 15%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  border-bottom: 1px solid rgba(168, 164, 164, 0.596);
+  transition: 0.2s;
+}
+
+.mySkillsPage .skillSet .skill:hover {
+  background-color: #1b1f2c80;
+  transition: 0s;
+  transform: scale(1.1);
+}
+
+.mySkillsPage .skillSet .skill .percentage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mySkillsPage .skillSet .skill .skillName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.mySkillsPage .skillSet .skill .numeric {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.mySkillsPage .skillSet .skill .percentage #box {
+  position: absolute;
+  width: 80%;
+  height: 9px;
+  background: rgb(31, 30, 30);
+  border-radius: 30px;
+}
+
+.mySkillsPage .skillSet #skill1 .percentage #box span {
+  position: absolute;
+  height: 9px;
+  border-radius: 30px;
+  width: 70%;
+  background: #03b9ff;
+}
+
+.mySkillsPage .skillSet #skill2 .percentage #box span {
+  position: absolute;
+  height: 9px;
+  border-radius: 30px;
+  width: 60%;
+  background: #03b9ff;
+}
+
+.mySkillsPage .skillSet #skill3 .percentage #box span {
+  position: absolute;
+  height: 9px;
+  border-radius: 30px;
+  width: 45%;
+  background: #03b9ff;
+}
+
+.mySkillsPage .skillSet #skill4 .percentage #box span {
+  position: absolute;
+  height: 9px;
+  border-radius: 30px;
+  width: 25%;
+  background: #03b9ff;
+}
+
+.mySkillsPage .skillSet #skill5 .percentage #box span {
+  position: absolute;
+  height: 9px;
+  border-radius: 30px;
+  width: 40%;
+  background: #03b9ff;
+}
+
+.mySkillsPage .skillSet #skill6 .percentage #box span {
+  position: absolute;
+  height: 9px;
+  border-radius: 30px;
+  width: 20%;
+  background: #03b9ff;
+}
+
+.mySkillsPage .skillSet #skill7 .percentage #box span {
+  position: absolute;
+  height: 9px;
+  border-radius: 30px;
+  width: 15%;
+}
+
+.mySkillsPage .boxSection {
+  height: 400px;
+  width: 32%;
+}
+
+.mySkillsPage .boxSection .firstRow {
+  height: 200px;
+  display: flex;
+}
+
+.mySkillsPage .boxSection .secondRow {
+  height: 200px;
+  display: flex;
+}
+
+.mySkillsPage .boxSection .boxLogo {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7em;
+  color: #03b9ff;
+}
+
+.mySkillsPage .boxSection .boxLogo:hover {
+  color: #292931e8;
+  cursor: pointer;
+}
+
+.mySkillsPage .boxSection #boxLogo1 {
+  border-right: 1px solid rgba(117, 111, 111, 0.76);
+  border-bottom: 1px solid rgba(117, 111, 111, 0.76);
+}
+.mySkillsPage .boxSection #boxLogo2 {
+  border-bottom: 1px solid rgba(117, 111, 111, 0.76);
+}
+.mySkillsPage .boxSection #boxLogo3 {
+  border-right: 1px solid rgba(117, 111, 111, 0.76);
+}
+
+/* Responnsive CSS */
+
+@media screen and (max-width: 1000px) {
+  .mySkillsPage {
+    height: auto;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .mySkillsPage .skillSet {
+    margin-top: 80px;
+    width: 70%;
+  }
+
+  .mySkillsPage .skillSet .skill {
+    grid-template-columns: 2fr 8fr 1fr;
+  }
+
+  .mySkillsPage .skillSet .skill .percentage {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+  }
+
+  .mySkillsPage .skillSet .skill .skillName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .mySkillsPage .skillSet .skill .numeric {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .mySkillsPage .skillSet .skill .percentage #box {
+    width: 100%;
+  }
+
+  .mySkillsPage .skillSet {
+    height: 70%;
+  }
+
+  .mySkillsPage .skillSet .skill {
+    height: 35px;
+    border-bottom: none;
+  }
+
+  .mySkillsPage .boxSection {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mySkillsPage .boxSection #boxLogo1 {
+    border-right: none;
+    border-bottom: none;
+  }
+  .mySkillsPage .boxSection #boxLogo2 {
+    border-bottom: none;
+  }
+  .mySkillsPage .boxSection #boxLogo3 {
+    border-right: none;
+  }
+
+  .mySkillsPage .boxSection .boxLogo {
+    font-size: 4em;
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  .mySkillsPage .skillSet {
+    width: 95%;
+  }
+
+  .mySkillsPage {
+    padding: 30px 10px;
+  }
+
+  .mySkillsPage .skillSet .skill {
+    height: 28px;
+  }
+
+  .mySkillsPage .boxSection .firstRow {
+    height: 100px;
+    display: flex;
+  }
+
+  .mySkillsPage .boxSection .secondRow {
+    height: 100px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .mySkillsPage .skillSet {
+    width: 90%;
+  }
+
+  .mySkillsPage {
+    padding: 0px 3px;
+  }
+
+  .mySkillsPage .skillSet .skill {
+    height: 30px;
+  }
+
+  .mySkillsPage .boxSection .boxLogo {
+    font-size: 2.5em;
+    margin: 0 7px;
+  }
+
+  .mySkillsPage .skillSet .skill .percentage {
+    font-size: 14px;
+  }
+  
+  .mySkillsPage .skillSet .skill .skillName {
+    font-size: 14px;
+  }
+  
+  .mySkillsPage .skillSet .skill .numeric {
+    font-size: 12px;
+  }
+
+  .mySkillsPage .skillSet .skill {
+    grid-template-columns: 2fr 7fr 1fr;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+    .mySkillsPage .skillSet .skill .numeric {
+        font-size: 10px;
+      }
+
+      .mySkillsPage .skillSet .skill .skillName {
+        font-size: 10px;
+      }
+
+      .mySkillsPage .boxSection .boxLogo {
+        font-size: 2em;
+        margin: 0 4px;
+      }
+
+}

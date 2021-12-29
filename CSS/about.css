@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+#aboutPage {
+  height: 100vh;
+  background-color: #080d14ed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainHeading {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+#aboutPage .mainHeading p {
+  display: inline-block;
+  position: relative;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #fff;
+  padding: 4px 0;
+}
+
+#aboutPage #mainHeading p span {
+  position: absolute;
+  height: 3px;
+  width: 57%;
+  bottom: 0;
+  left: 0;
+  background-color: #03b9ff;
+  border-radius: 0px 14px 14px 0px;
+}
+
+#aboutPage #mainContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#aboutPage #mainContent #details {
+  height: 60%;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#aboutPage #mainContent #details p {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+  margin: 4px 0;
+}
+
+#aboutPage #mainContent #details p span {
+  color: #03b9ff;
+  margin-right: 10px;
+}
+
+#aboutPage .imgCollection {
+  height: 300px;
+  width: 90%;
+  margin-top: 40px;
+  display: flex;
+}
+
+.item {
+  width: 25%;
+  height: 100%;
+  border: 1px solid #000;
+}
+
+#item1 {
+  background: url("../Imgs/bag.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#item2 {
+  background: url("../Imgs/reading.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#item3 {
+  background: url("../Imgs/music.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#item4 {
+  background: url("../Imgs/coding.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 811px) {
+
+  #aboutPage #mainContent {
+      margin-top: 0px;
+  }
+
+  
+#aboutPage #mainContent #details {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#aboutPage .imgCollection {
+    height: auto;
+    width: 100%;
+    background-color: none;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item{
+      height: 226px;
+      width: 440px;
+      margin: 4px 0;
+  }
+
+  #aboutPage{
+      height: auto;
+      padding: 40px 0;
+  }
+
+  .mainHeading{
+      top: 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 567px) {
+    #aboutPage #mainContent #details p{
+        font-size: 14px;
+        margin: 2px 0;
+    }
+
+    .item{
+        height: 200px;
+        width: 400px;
+        margin: 4px 0;
+    }
+
+    #aboutPage .mainHeading p{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 433px) {
+    #aboutPage #mainContent #details p{
+        font-size: 12px;
+        margin: 1px 0;
+    }
+
+    #aboutPage .mainHeading p{
+        font-size: 27px;
+    }
+
+    .item{
+        height: 150px;
+        width: 300px;
+        margin: 4px 0;
+    }
+}
+
+@media screen and (max-width: 353px) {
+    
+    #aboutPage #mainContent #details p{
+        font-size: 11px;
+        margin: 2px 0;
+    }
+
+    #aboutPage .mainHeading p{
+        font-size: 24px;
+    }
+
+    .item{
+        height: 120px;
+        width: 250px;
+        margin: 4px 0;
+    }
+
+    #aboutPage{
+        height: auto;
+        padding: 30px 0;
+    }
+  
+    .mainHeading{
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+  .item{
+    height: 100px;
+    width: 220px;
+    margin: 4px 0;
+}
+}

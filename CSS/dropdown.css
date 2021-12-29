@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sideMenu {
+  position: fixed;
+  background: #02020e;
+  height: 100vh;
+  width: 840px;
+  z-index: 1000;
+  transition: 0.3s;
+  transform: translateX(-840px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.sideMenuactive {
+  transform: translateX(0vh);
+}
+
+.sideMenu .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideMenu .navbar ul li {
+  list-style: none;
+  margin: 0 25px;
+}
+
+.sideMenu .navbar ul li a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #03b9ff;
+}
+
+.sideMenu .navbar ul li a span {
+  margin-left: 5px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.extraContents {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.extraContents .column p {
+  color: #03b9ff;
+  font-size: 1.7em;
+  font-weight: 600;
+  margin-bottom: -2px;
+}
+
+.extraContents .column a {
+  text-decoration: none;
+}
+
+.extraContents .column ul{
+    padding: 0;
+}
+
+.extraContents .column ul li {
+  list-style: none;
+  margin: 0 1px;
+  font-size: 24px;
+  color: rgba(199, 190, 190, 0.753);
+  transition: 0.14s;
+  cursor: pointer;
+}
+
+.extraContents .column ul li:hover {
+  color: #03b9ff;
+  transform: scale(1.1);
+}
+
+.lastBox {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.logobox {
+  height: 45px;
+  width: 70%;
+  margin-left: -18px;
+}
+.logobox ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logobox ul li {
+  list-style: none;
+  margin: 0 12px;
+}
+.logobox ul li a {
+  text-decoration: none;
+  font-size: 1.7em;
+  color: #03b9ff;
+  transition: 0.2s;
+}
+.logobox ul li a:hover {
+  color: #fff;
+}
+.textBox p {
+  margin: 0 0;
+  text-align: center;
+  color: #fff;
+}
+.textBox #email {
+  cursor: pointer;
+}
+.textBox #email:hover {
+  color: #03b9ff;
+}
+
+#closeBtn {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 35px;
+  width: 35px;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 980px) {
+  .sideMenu {
+    width: 500px;
+  }
+
+  .sideMenu .navbar ul li {
+    margin: 0 10px;
+  }
+
+  .sideMenu .navbar ul li a {
+    font-size: 1.7em;
+  }
+
+  .sideMenu .navbar ul li a span {
+    margin-left: 0px;
+    font-size: 20px;
+  }
+
+  .extraContents .column p {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .extraContents .column ul li {
+    margin: 0 1px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .sideMenu {
+    width: 300px;
+    justify-content: none;
+  }
+
+  .sideMenu .navbar ul li {
+    margin: 0 4px;
+  }
+
+  .sideMenu .navbar ul li a {
+    font-size: 1.3em;
+  }
+
+  .sideMenu .navbar ul li a span {
+    font-size: 14px;
+  }
+
+  .extraContents .column p {
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+
+  .extraContents .column ul li {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .extraContents .column ul{
+    padding: 0 13px;
+}
+
+#closeBtn{
+    height: 30px;
+    width: 30px;
+}
+
+#closeBtn i{
+    font-size: 14px;
+}
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .sideMenu{
+        width: 270px;
+    }
+    /* #menuBtn{
+        height: 40px;
+        width: 40px;
+    } */
+    
+    #closeBtn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .sideMenu{
+        width: 250px;
+    }
+
+    /* #menuBtn{
+        height: 30px;
+        width: 30px;
+        top: 3px;
+        right: 0;
+    } */
+}
+

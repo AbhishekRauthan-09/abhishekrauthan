@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.footer{
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer .footerBox{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .footerBox .logobox{
+    height: 45px;
+    width: 70%;
+    margin-left: -18px;
+}
+
+.footer .footerBox .logobox ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footerBox .logobox ul li{
+    list-style: none;
+    margin: 0 12px;
+}
+
+.footer .footerBox .logobox ul li a{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: #03b9ff;
+    transition: 0.2s;
+}
+
+.footer .footerBox .logobox ul li a:hover{
+    color: #fff;
+}
+
+.footer .footerBox .textBox p{
+    margin: 0 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .footerBox .textBox #email{
+    cursor: pointer;
+}
+.footer .footerBox .textBox #email:hover{
+    color: #03b9ff;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width:390px) 
+{
+    .footer .footerBox{
+        width: 100%;
+    }
+
+    .footer .footerBox .logobox ul li{
+        margin: 0 8px;
+    }
+
+.footer .footerBox .textBox p{
+    font-size: 14px;
+}
+
+}
